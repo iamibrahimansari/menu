@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/menu/static/css/main.7c0a514a.css",
+    "main.js": "/menu/static/js/main.b02d2f02.js",
+    "static/media/item-7.jpeg": "/menu/static/media/item-7.2b2d85320c08729e6a58.jpeg",
+    "static/media/item-2.jpeg": "/menu/static/media/item-2.f0b6b25efcbd39c641cb.jpeg",
+    "static/media/item-8.jpeg": "/menu/static/media/item-8.77daac2abe411b747cb4.jpeg",
+    "static/media/item-4.jpeg": "/menu/static/media/item-4.1246e0c14d2695db1ae5.jpeg",
+    "static/media/item-1.jpeg": "/menu/static/media/item-1.59f884831772e6397275.jpeg",
+    "static/media/item-6.jpeg": "/menu/static/media/item-6.71751fefb2ee55699e44.jpeg",
+    "static/media/item-3.jpeg": "/menu/static/media/item-3.41dbf97f88e1e73a7474.jpeg",
+    "static/media/item-5.jpeg": "/menu/static/media/item-5.39ce038c4ceb093d7c66.jpeg",
+    "static/media/item-9.jpeg": "/menu/static/media/item-9.46d925888a7d2fa971d6.jpeg",
+    "index.html": "/menu/index.html",
+    "main.7c0a514a.css.map": "/menu/static/css/main.7c0a514a.css.map",
+    "main.b02d2f02.js.map": "/menu/static/js/main.b02d2f02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c0a514a.css",
+    "static/js/main.b02d2f02.js"
+  ]
+}
