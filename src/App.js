@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import categories from './data/categories';
+import cards from './data/cards';
+import Title from './components/Title';
+import MenuCard from './components/MenuCard';
+import {useState} from 'react';
 
-function App() {
+const App = () => {
+  const [menus, setMenus] = useState(cards);
+  const handleCategoryBtn = category =>{
+    if(category === 'All'){
+      setMenus(cards);
+    }else{
+      category = category.toLowerCase();
+      setMenus(cards.filter(card => card.label === category));
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <Title categories={categories} onClick={handleCategoryBtn} />
       </header>
+      <main className="main">
+          {
+            menus.map(menu => <MenuCard key={menu.id} {...menu} />)
+          }
+      </main>
     </div>
   );
 }

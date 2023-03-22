@@ -1,0 +1,58 @@
+.header{
+    &__title{
+        margin-bottom: 3rem;
+    }
+    &__h1{
+        font-size: 5rem;
+        text-align: $center;
+        letter-spacing: $letterSpacing;
+    }
+    &__line{
+        width: 12rem;
+        height: 0.5rem;
+        background-color: $lineColor;
+        margin-inline: auto;
+    }
+    &__menu-sign{
+        margin-bottom: 2rem;
+        span{
+            display: block;
+            width: 3rem;
+            height: 0.5rem;
+            margin-bottom: 0.5rem;
+            background-color: #000;
+            border-radius: 5px;
+            margin-inline: auto;
+        }
+        display: none;
+    }
+    &__categories{
+        display: $display;
+        justify-content: $center;
+        gap: 3rem;
+    }
+
+    &__category{
+        font-size: 1.6rem;
+        background-color: $btnColor;
+        padding: 0.5rem 2rem;
+        color: $whiteColor;
+        border-radius: $borderRadius;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: $btnHoverColor;
+            transition: background-color 0.3s;
+        }
+    }
+
+    &__cross{
+        span:first-child{
+            margin-bottom: -5px;
+            transform: rotate(45deg);
+        }
+        span:last-child{
+            transform: rotate(-45deg);
+        }
+    }
+}
