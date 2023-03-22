@@ -29,7 +29,6 @@ const Title = ({categories, onClick}) =>{
             <div className="header__categories">
                 {   
                     isShow ?
-                    null :
                     categories.map(category => {
                         return(
                             <button 
@@ -40,7 +39,8 @@ const Title = ({categories, onClick}) =>{
                                     {category}
                             </button>
                         )
-                    }) 
+                    }) :
+                    null
                 }
             </div>
         </>
